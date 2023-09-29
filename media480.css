@@ -1,0 +1,18 @@
+@media screen and (max-width: 480px)
+{
+    .menu{width: 100%;}
+    .header,main,footer{
+        display: grid;
+    /* height: 100vh; */
+    gap: 12px;
+    grid-template-columns:  1fr ;
+    grid-template-rows:     0.8fr 0.8fr 0.8fr 0.8fr;
+    grid-template-areas: 
+               "h"
+               "m"
+               "c1"
+               "c2"
+               "f";
+    }
+    }
+

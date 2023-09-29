@@ -1,0 +1,107 @@
+body{
+    background-color: rgb(255, 255, 249);
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0 auto;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* Header */
+.cabeçalho{
+    background-color: rgb(253, 240, 253);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.cabeçalho-img{
+    height: 72px;
+    width: 72px;
+}
+
+.cabeçalho-menu{
+display: flex;
+gap: 32px;
+}
+
+.cabeçalho-menu-item{
+font-family: 'Times New Roman', Times, serif;
+font-size: 20px;
+color: black;
+}
+
+
+/* Fim Header */
+
+
+/* Estrutura do corpo */
+header, main, 
+#c1, #c2{
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 10px;}
+
+#c1{ grid-area: c1; }
+#c2{ grid-area: c2; }
+
+main{grid-area: m;}
+#c1{grid-area: c1;}
+#c2{grid-area: c2;}
+
+.conteudo{
+    grid-area: a;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    text-align: center;    
+}
+
+/* Estrutura do corpo*/
+
+
+/*Conteudo*/
+.header,main,footer{
+    display: grid;
+/* height: 100vh; */
+gap: 12px;
+grid-template-columns:  0.8fr 0.8fr;
+grid-template-rows:     0.8fr 0.8fr;
+grid-template-areas: 
+           "h h"
+           "m m"
+           "c1 c2 "
+           "f f";
+}
+
+.conteudo{
+    border-top: 0.4px solid rgb(177, 177, 177);
+    margin-bottom: auto;
+}
+
+.conteudo1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 500px;
+}
+
+.conteudo2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 500px;
+}
+
+/*conteudo*/
+
+/*footer*/
+
+.bg-dark{
+    background-color: rgb(253, 240, 253);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
